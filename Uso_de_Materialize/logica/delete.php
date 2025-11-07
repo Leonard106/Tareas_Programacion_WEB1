@@ -8,6 +8,6 @@ if ($conexion->query($sql) === TRUE) {
     header('Location: ../index.php');
     exit();
 } else {
-    echo "Error: " . $conexion->error;
+    echo "Error al eliminar: " . $sql->error;
 }
 ?>
